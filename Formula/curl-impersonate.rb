@@ -5,7 +5,7 @@ class CurlImpersonate < Formula
   sha256 "b89e055074d202aa457d2479a4b33f6a67e3e36a7bf4588755a9c97b3dd824ac"
   license "MIT"
 
-  head "https://github.com/lwthiker/curl-impersonate.git", branch: "main"
+  head "https://github.com/stonevil/curl-impersonate.git", branch: "main"
 
   depends_on "autoconf" => :build
   depends_on "automake" => :build
