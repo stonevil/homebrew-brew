@@ -39,6 +39,7 @@ class W3m < Formula
   depends_on "pkgconf" => :build
   depends_on "bdw-gc"
   depends_on "openssl@3"
+  depends_on "libsixel"
 
   uses_from_macos "ncurses"
   uses_from_macos "zlib"
