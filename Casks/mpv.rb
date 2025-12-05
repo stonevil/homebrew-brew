@@ -8,9 +8,9 @@ cask "mpv" do
   on_arm do
     version "0.40.0"
     sha256 "3170fb709defebaba33e9755297d70dc3562220541de54fc3d494a8309ef1260"
-    url "https://laboratory.stolendata.net/~djinn/mpv_osx/mpv-#{arch}-#{version}.tar.gz"
+    url "https://laboratory.stolendata.net/~djinn/mpv_osx/mpv-arm64-#{version}.tar.gz"
 
-   app "mpv-#{arch}-#{version}/mpv.app"
+   app "mpv-arm64-#{version}/mpv.app"
   end
   on_intel do
     version "0.39.0"
