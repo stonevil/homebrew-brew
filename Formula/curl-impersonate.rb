@@ -21,7 +21,7 @@ class CurlImpersonate < Formula
 
   def install
     mkdir "build" do
-      system "../configure", "--prefix", %r{/usr/local}
+      system "../configure", "--prefix", "#{prefix}"
 
       ENV.deparallelize do
         system "gmake", "chrome-build"
