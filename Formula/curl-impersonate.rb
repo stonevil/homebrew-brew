@@ -20,10 +20,8 @@ class CurlImpersonate < Formula
   depends_on "zstd"
 
   def install
-    inreplace "configure", %r{/usr/local}, prefix
-
     mkdir "build" do
-      system "../configure"
+      system "../configure", "--prefix", %r{/usr/local}
 
       ENV.deparallelize do
         system "gmake", "chrome-build"
