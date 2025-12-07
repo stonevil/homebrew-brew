@@ -22,7 +22,7 @@ cask "mpv" do
   end
 
   postflight do
-    system_command '/usr/bin/xattr'
+    system_command '/usr/bin/xattr',
       args: ['-r', '-d', 'com.apple.quarantine', "#{appdir}/mpv.app"]
   end
 
