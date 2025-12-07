@@ -20,6 +20,8 @@ class CurlImpersonate < Formula
   depends_on "zstd"
 
   def install
+    inreplace "configure", %r{/usr/local}, prefix
+
     mkdir "build" do
       system "../configure", "--prefix", "#{prefix}"
 
