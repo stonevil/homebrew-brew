@@ -5,7 +5,7 @@ cask "librewolf" do
   sha256 arm:   "4971d23a262a7414d6d7de2bc0449832a7e39cb341fc3f9b7388fe181fbf24a1",
          intel: "7d856314effa69e6955f1db4b2e94209b30b9b3757f324499db5e3acef0ae609"
 
-  url "https://gitlab.com/api/v4/projects/44042130/packages/generic/librewolf/#{version.tr(",", "-")}/librewolf-#{version.tr(",", "-")}-macos-#{arch}-package.dmg",
+  url "https://dl.librewolf.net/librewolf/#{version.tr(",", "-")}/librewolf-#{version.tr(",", "-")}-macos-#{arch}-package.dmg",
       verified: "gitlab.com/api/v4/projects/44042130/packages/generic/librewolf/"
   name "LibreWolf"
   desc "Web browser"
